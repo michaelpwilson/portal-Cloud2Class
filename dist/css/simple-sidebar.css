@@ -1,3 +1,14 @@
+body{
+overflow-y:hidden; overflow-x:hidden;
+}
+iframe{border:0;}
+.sidebar-group ul li{
+display:inline; 
+}
+.sidebar-group ul{
+margin-top:-10px;
+}
+
 @-moz-document url-prefix() {
 #page-content-wrapper{
 height:539px;
@@ -32,14 +43,9 @@ color:white;
 color:white;
 }
 .bottom-navy{
-background: #356aa0; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #356aa0 0%, #356aa0 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#356aa0), color-stop(100%,#356aa0)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg, #356aa0 0%,#356aa0 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg, #356aa0 0%,#356aa0 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg, #356aa0 0%,#356aa0 100%); /* IE10+ */
-background: linear-gradient(135deg, #356aa0 0%,#356aa0 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background-color:#47a447;
+width:81.8%;
+margin-left: 249px;
 }
 .thumbnail > img, .thumbnail a > img {
 min-height:17%;
@@ -58,16 +64,9 @@ border-right:1px solid white;
   margin-left: -250px;
   left: 250px;
   width: 250px;
-background: #356aa0; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #356aa0 0%, #356aa0 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#356aa0), color-stop(100%,#356aa0)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg, #356aa0 0%,#356aa0 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg, #356aa0 0%,#356aa0 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg, #356aa0 0%,#356aa0 100%); /* IE10+ */
-background: linear-gradient(135deg, #356aa0 0%,#356aa0 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color:#47a447;
   position: fixed;
-  height: 93%;
+  height: 100%;
   overflow-y: auto;
   z-index: 1000;
   transition: all 0.4s ease 0s;

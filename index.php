@@ -19,14 +19,11 @@
     <link rel="stylesheet" href="css/jquery.fileupload.css">
   </head>
 
-  <body style="overflow-y:hidden; overflow-x:hidden;">
-<style>
-iframe{border:0;}
-</style>
+  <body>
     <div id="wrapper">
 
       <!-- Sidebar -->
-      <div id="sidebar-wrapper" style="overflow-x:hidden; overflow-y:hidden;">
+      <div id="sidebar-wrapper" style="overflow-x:hidden;">
         <ul class="sidebar-nav">
 <div class="sidebar-group" style="padding:0px 15px 15px 15px; width:100%; height:295px;">
 <div style="cursor:pointer;">
@@ -48,17 +45,8 @@ iframe{border:0;}
     <!-- The container for the uploaded files -->
 
     <div id="files" class="files"></div>
-<style>
-.sidebar-group ul li{
-display:inline;
-}
-.sidebar-group ul{
-margin-top:-10px;
-}
-</style>
 <ul>
-<li><button type="button" class="btn btn-danger" style="width:82px; margin-left:-38px;">Download</button></li>
-<li><button type="button" id="loadfiles" class="btn btn-primary">View Files</button></li>
+<li><button type="button" id="loadfiles" class="btn btn-default">View Files</button></li>
 </li>
 
 </div>
