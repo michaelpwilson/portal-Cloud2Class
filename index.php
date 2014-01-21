@@ -59,6 +59,7 @@
       </div>
 
       <!-- Page content -->
+<a id="menu-toggle" href="#" class="btn btn-success" style="position:absolute; top:6%; right:3%;"><i class="glyphicon glyphicon-align-right"></i></a>
       <iframe src="https://shelldemo.cloud2class.com" id="page-content-wrapper">
         </iframe>
 </div>
