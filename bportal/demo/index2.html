@@ -1,0 +1,30 @@
+<html lang="en">
+
+
+
+<head>
+<script lang=javascript>
+function wef() {
+s="##12312312";
+this.urlLRE = new RegExp('(?:##[0-9a-zA-Z]{8})');
+  if (this.urlLRE && this.urlLRE.test(s)) {
+    var fra = parent.document.getElementById('nodename');
+//    fra.href = RegExp.lastMatch.substr(2,8);
+    fra.href = 'https://cloud2class.com/console?' + RegExp.lastMatch.substr(5,32);
+
+
+    //var fra = document.getElementById('test');
+    //var fraContent = fra.contentDocument || fra.contentWindow.document;
+  //  var fraContent = fra.contentDocument || fra.contentWindow.document;
+    //myLinkHref = fraContent.getElementById('myLinkId').href;
+    //fraContent.getElementById('myLinkId').href = RegExp.lastMatch;
+//    fraContent.getElementById('nodename').href = 'http://google.co.uk';
+//    document.getElementById('nodename').href = 'http://google.co.uk';
+  }
+}
+</script>
+</head>
+<body onload="wef();">
+iframe here
+</body>
+</html>

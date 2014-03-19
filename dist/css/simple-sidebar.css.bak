@@ -1,11 +1,6 @@
 @-moz-document url-prefix() {
 #page-content-wrapper{
-height: 500px;
-position: absolute;
-top: 0;
-bottom: -100;
-  overflow: auto;
-  resize: both;
+height:538px;
 }
 }
 .file-modal-info {
@@ -17,11 +12,8 @@ position:absolute;
 left:10px;
 bottom:10px;
 }
-html, body{
+body{
 overflow-y:hidden; overflow-x:hidden;
-height: 100%;
-}
-
 }
 iframe{border:0;}
 .sidebar-group ul li{
@@ -59,7 +51,9 @@ color:white;
 .navbar-inverse .navbar-nav > li > a {
 color:white;
 }
-.bottom-navy{ background-color:#47a447; position:absolute; bottom:-19px; }
+.bottom-navy{
+background-color:#47a447;
+}
 .thumbnail > img, .thumbnail a > img {
 min-height:123px;
 max-height:123px;
@@ -75,7 +69,6 @@ color:whitesmoke; margin-top:-33px; text-align:right; margin-right:4px;
 #wrapper {
   padding-left: 250px;
   transition: all 0.4s ease 0s;
-  max-height:603px;
 }
 
 #sidebar-wrapper {
@@ -91,14 +84,11 @@ border-right:1px solid white;
   transition: all 0.4s ease 0s;
 }
 
-
 #page-content-wrapper {
   width: 100%;
- min-height: 100%; 
-height: 450px;
- padding-bottom: 75px;
+  min-height: 89%;
+  height: 89%;
 }
-html[data-useragent*='MSIE 11.0'] html, body { height: 100%; }
 
 .sidebar-nav {
   position: absolute;
@@ -162,12 +152,9 @@ html[data-useragent*='MSIE 11.0'] html, body { height: 100%; }
   padding: 20px;
 }
 @media (max-width:1100px){
-*/*min-height:89.9%;*/*
+min-height:89.9%;
 }
 #page-content-wrapper {
-  min-height: 100%; 
-height: 450;
-  padding-bottom: 75px;
 }
 
 
@@ -176,9 +163,7 @@ height: 450;
 display:none;
 }
 #page-content-wrapper{
- min-height: 100%;
-height: 300;
-  padding-bottom: 0px;
+min-height:100%;
 }
 #wrapper {
   padding-left: 0;

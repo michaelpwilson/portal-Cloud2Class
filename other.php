@@ -63,8 +63,7 @@
     <div id="files" class="files"></div>
 <ul>
 <li><button type="button" data-toggle="button" class="btn btn-default">Resources</button></li>
-<li><a id="nodename" href=""><button class="btn btn-default">New Window</button></a></li>
-</ul>
+</li>
 </div>
 <div class="sidebar-group" style="padding:0px 15px 15px 15px;">
         <h4 style="padding-bottom:15px; border-bottom:1px solid white; color:white; width:100%;">External Links:</h4>
@@ -78,7 +77,8 @@
           <iframe src="bshell" id="page-content-wrapper" >
           </iframe>
       <a class="btn btn-success show-sidebar"><b class="glyphicon glyphicon-align-left"></b></a>
-<nav class="navbar navbar-inverse bottom-navy navbar-sam-main navey" role="navigation">
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-bottom bottom-navy navbar-sam-main navey" role="navigation">
 <!--<nav class="navbar navbar-inverse navbar-static-bottom bottom-navy navbar-sam-main navey" role="navigation">-->
 <!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header">
@@ -102,7 +102,6 @@
 
 </div><!-- /.navbar-collapse -->
 </nav>
-</div>
     <!-- Custom JavaScript for the Menu Toggle -->
 <div class="modal fade" id="email-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
