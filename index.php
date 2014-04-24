@@ -63,7 +63,6 @@
     <div id="files" class="files"></div>
 <ul>
 <li><button type="button" data-toggle="button" class="btn btn-default">Resources</button></li>
-<li><a id="nodename" href=""><button class="btn btn-default">New Window</button></a></li>
 </ul>
 </div>
 <div class="sidebar-group" style="padding:0px 15px 15px 15px;">
@@ -76,9 +75,10 @@
 
       <!-- Page content -->
           <iframe src="bshell" id="page-content-wrapper" >
-          </iframe>
+</iframe>
+<a style="position:absolute; top:10px; right:30px;" id="nodename" target="_blank" class="btn btn-primary"><b class="glyphicon glyphicon-star"></b> New Window</a>
       <a class="btn btn-success show-sidebar"><b class="glyphicon glyphicon-align-left"></b></a>
-<nav class="navbar navbar-inverse bottom-navy navbar-sam-main navey" role="navigation">
+<nav class="navbar navbar-inverse bottom-navy navbar-sam-main navey" role="navigation" style="width:81%">
 <!--<nav class="navbar navbar-inverse navbar-static-bottom bottom-navy navbar-sam-main navey" role="navigation">-->
 <!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header">
@@ -151,6 +151,10 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function() {
+$(window).bind('beforeunload', function(){
+  return 'Are you sure you want to leave?';
+});
+
 $( ".panel-exit" ).click(function() {
 $(".panel-body").hide();
 $(".panel-footer").hide();
