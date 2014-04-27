@@ -1,11 +1,7 @@
 @-moz-document url-prefix() {
-.bottom-navy{
-bottom:-19px;
-width:81%;
-}
 #page-content-wrapper {
-  width: 100%;
-height: 605px;
+width: 100%;
+height: 100%;
 resize:both;
 }
 }
@@ -19,7 +15,6 @@ left:10px;
 bottom:10px;
 }
 html, body{
-overflow-y:hidden; overflow-x:hidden;
 height: 100%;
 }
 
@@ -60,7 +55,8 @@ color:white;
 .navbar-inverse .navbar-nav > li > a {
 color:white;
 }
-.bottom-navy{ background-color:#47a447; position:absolute; bottom:-19px; }
+#page-content-wrapper{min-height:100%; width:100%;}
+.bottom-navy{ background-color:#47a447; position:relative; margin-bottom:0; margin-top:-4px; width:100%;}
 .thumbnail > img, .thumbnail a > img {
 min-height:123px;
 max-height:123px;
@@ -76,7 +72,8 @@ color:whitesmoke; margin-top:-33px; text-align:right; margin-right:4px;
 #wrapper {
   padding-left: 250px;
   transition: all 0.4s ease 0s;
-  max-height:603px;
+  max-height:89%;
+  height:90%;
 }
 
 #sidebar-wrapper {
@@ -92,6 +89,7 @@ border-right:1px solid white;
   transition: all 0.4s ease 0s;
 }
 html[data-useragent*='MSIE 11.0'] html, body { height: 100%; }
+html, body { height:100%;}
 
 .sidebar-nav {
   position: absolute;
@@ -154,15 +152,10 @@ html[data-useragent*='MSIE 11.0'] html, body { height: 100%; }
 .inset {
   padding: 20px;
 }
-@media (max-width:1100px){
-*/*min-height:89.9%;*/*
-}
-#page-content-wrapper {
-  min-height: 100%; 
+page-content-wrapper {
+  min-height: 100%;
   width:100%;
 }
-
-
 @media (max-width:767px) {
 .bottom-navy{
 display:none;
@@ -172,6 +165,7 @@ display:none;
 height: 300;
 }
 #wrapper {
+  min-height:100%;
   padding-left: 0;
 }
 
@@ -197,4 +191,3 @@ height: 300;
 }
 
 }
-

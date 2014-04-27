@@ -10,7 +10,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
-
+    <link href="dist/css/perfect-scrollbar.css" rel="stylesheet">
     <!-- Add custom CSS here -->
     <link href="dist/css/simple-sidebar.css" rel="stylesheet">
     <link href="dist/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
 </div>
 <li>
 	     <!-- The fileinput-button span is used to style the file input field as button -->
-    <span class="btn btn-primary fileinput-button" data-toggle="button" style="float:left; margin-top:-1px; height:32px; padding-left:0; width:51px; padding-right:10px; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+    <span class="btn btn-primary fileinput-button" style="float:left; margin-top:-1px; height:32px; padding-left:0; width:51px; padding-right:10px; border-top-right-radius: 0; border-bottom-right-radius: 0;">
         <i style="float:left;" class="glyphicon glyphicon-plus"></i>
         <span>upload a file</span>
         <!-- The file input field used as target for the file upload widget -->
@@ -62,7 +62,7 @@
 
     <div id="files" class="files"></div>
 <ul>
-<li><button type="button" data-toggle="button" class="btn btn-default">Resources</button></li>
+<li><button type="button" id="loadfiles" class="btn btn-default">Resources</button></li>
 </ul>
 </div>
 <div class="sidebar-group" style="padding:0px 15px 15px 15px;">
@@ -74,11 +74,11 @@
       </div>
 
       <!-- Page content -->
-          <iframe src="bshell" id="page-content-wrapper" >
+          <iframe src="bshell" id="page-content-wrapper" scrolling="no" style="overflow:hidden">
 </iframe>
 <a style="position:absolute; top:10px; right:30px;" id="nodename" target="_blank" class="btn btn-primary"><b class="glyphicon glyphicon-star"></b> New Window</a>
       <a class="btn btn-success show-sidebar"><b class="glyphicon glyphicon-align-left"></b></a>
-<nav class="navbar navbar-inverse bottom-navy navbar-sam-main navey" role="navigation" style="width:81%">
+<nav class="navbar navbar-inverse bottom-navy navbar-sam-main navey" role="navigation">
 <!--<nav class="navbar navbar-inverse navbar-static-bottom bottom-navy navbar-sam-main navey" role="navigation">-->
 <!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header">
@@ -149,71 +149,7 @@
 <script src="js/jquery.iframe-transport.js"></script>
 <script src="js/jquery.fileupload.js"></script> 
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function() {
-$(window).bind('beforeunload', function(){
-  return 'Are you sure you want to leave?';
-});
-
-$( ".panel-exit" ).click(function() {
-$(".panel-body").hide();
-$(".panel-footer").hide();
-$(".panel-exit").hide();
-$(".panel-open").show();
-$(".panel-heading .dropdown-toggle").hide();
-}); 
-$( ".panel-open" ).click(function() {
-$(".panel-body").show();
-$(".panel-footer").show();
-$(".panel-exit").show();
-$(".panel-open").hide();
-$(".panel-heading .dropdown-toggle").show();
-}); 
-$(".show-sidebar").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("active");
-    });
-
-        $('#loadfiles').click(function(){
-        $.get('showfiles.php', function(data) {
-            $("#files-modal #files").html(data);
-    });
-        $("#files-modal").modal();
-});
-});
-$(function () {
-    'use strict';
-    // Change this to the location of your server-side upload handler:
-    var url = window.location.hostname === 'blueimp.github.io' ?
-                '//jquery-file-upload.appspot.com/' : 'server/php/';
-    $('#fileupload').fileupload({
-        url: url,
-        dataType: 'json',
-        done: function (e, data) {
-            $.each(data.result.files, function (index, file) {
-                $('<p/>').text('congrats').appendTo('#files');
-                $("#files:has(p)").addClass("has-paragraph");
-if ($("#files").is(".has-paragraph")) {
-        $.get('showfiles.php', function(data) {
-            $("#files-modal #files").html(data);
-    });
-        $("#files-modal").modal();
-}          
-  });
-        },
-        progressall: function (e, data) {
-            var progress = parseInt(data.loaded / data.total * 100, 10);
-            $('#progress .progress-bar').css(
-                'width',
-                progress + '%'
-            );
-        }
-    }).prop('disabled', !$.support.fileInput)
-        .parent().addClass($.support.fileInput ? undefined : 'disabled');
-});
-    </script>
-
-
+<script src="dist/js/portal.js"></script>
   </body>
 </html>
 
