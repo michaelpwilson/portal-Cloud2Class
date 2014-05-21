@@ -29,12 +29,12 @@ margin-top:-10px;
 }
 
 @media(max-width:1210px){
+.siteseal {
+display:none;
+}
 .navey h1{
 top:-10px;
 font-size:40px;
-}
-#siteseal{
-display:none;
 }
 .trademark{ 
 display:none;

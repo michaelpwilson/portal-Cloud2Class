@@ -1,4 +1,22 @@
 $(document).ready(function() {
+$(function(){
+  var count = 4,
+      $btn = $('#nodename'); //Or which ever you want
+      //Change the label of $btn
+      $btn.val($btn.val()+' ('+count+')')
+      
+  $btn.click(function(){
+      $btn.val($btn.val().replace(count,count-1));
+      count--;
+      if(count==0) {
+	    $(this).removeClass('btn-primary');
+	    $(this).addClass('disabled btn-danger');
+	    $(this).text("disabled");
+            alert("Due to browser limitations, you cannot open more than 4 tabs of this instance.");
+      }
+  })
+})
+
 $(window).bind('beforeunload', function(){
   return 'Are you sure you want to leave?';
 });
