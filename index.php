@@ -74,11 +74,10 @@
       </div>
 
       <!-- Page content -->
-          <iframe src="bshell" id="page-content-wrapper" scrolling="no" style="overflow:hidden">
-</iframe>
+          <iframe src="bshell" id="page-content-wrapper" scrolling="no" style="overflow:hidden"></iframe>
 <a style="position:absolute; top:10px; right:30px;" id="nodename" target="_blank" class="btn btn-primary"><b class="glyphicon glyphicon-star"></b> New Window</a>
       <a class="btn btn-success show-sidebar"><b class="glyphicon glyphicon-align-left"></b></a>
-<nav class="navbar navbar-inverse bottom-navy navbar-sam-main navey" role="navigation">
+<nav class="navbar navbar-inverse bottom-navy navbar-sam-main navey" role="navigation" style="border:0">
 <!--<nav class="navbar navbar-inverse navbar-static-bottom bottom-navy navbar-sam-main navey" role="navigation">-->
 <!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header">

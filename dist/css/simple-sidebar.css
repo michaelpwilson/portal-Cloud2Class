@@ -16,6 +16,7 @@ bottom:10px;
 }
 html, body{
 height: 100%;
+background-color: #47a447;
 }
 
 }
@@ -55,7 +56,7 @@ color:white;
 .navbar-inverse .navbar-nav > li > a {
 color:white;
 }
-#page-content-wrapper{min-height:100%; width:100%;}
+#page-content-wrapper{min-height:100%; width:100%; background:#fff;}
 .bottom-navy{ background-color:#47a447; position:relative; margin-bottom:0; margin-top:-4px; width:100%;}
 .thumbnail > img, .thumbnail a > img {
 min-height:123px;
@@ -72,8 +73,8 @@ color:whitesmoke; margin-top:-33px; text-align:right; margin-right:4px;
 #wrapper {
   padding-left: 250px;
   transition: all 0.4s ease 0s;
-  max-height:89%;
-  height:90%;
+  max-height:91%;
+  height:91%;
 }
 
 #sidebar-wrapper {
