@@ -56,7 +56,7 @@ color:white;
 .navbar-inverse .navbar-nav > li > a {
 color:white;
 }
-#page-content-wrapper{min-height:100%; width:100%; background:#fff;}
+#page-content-wrapper{min-height:100%; width:100%; background:#fff; }
 .bottom-navy{ background-color:#47a447; position:relative; margin-bottom:0; margin-top:-4px; width:100%;}
 .thumbnail > img, .thumbnail a > img {
 min-height:123px;
